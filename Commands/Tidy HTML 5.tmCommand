@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>captureFormatString</key>
+	<string>$3</string>
+	<key>capturePattern</key>
+	<string>line (\d+) column (\d+) - (.*?)$</string>
+	<key>command</key>
+	<string># OPEN /tmp/tidy_errors.txt FOR ERRORS
+#
+"${TM_TIDY:-tidy}" -f /tmp/tidy_errors.txt -ashtml -clean -indent -omit -quiet -utf8 -wrap 0 --tab-size $TM_TAB_SIZE --indent-spaces $TM_TAB_SIZE|\
+
+if [[ "$TM_SOFT_TABS" == "YES" ]]; then cat; else ruby -pe '
+
+	unless $in_pre
+		tab_size = ENV["TM_TAB_SIZE"].to_i
+		space, text = /( *)(.*)/m.match($_)[1..2]
+		$_ = "\t" * (space.length / tab_size).floor +
+		     " "  * (space.length % tab_size) + text
+	end
+
+	$in_pre = true	if(/&lt;pre&gt;/)
+	$in_pre = false	if(/&lt;\/pre&gt;/)
+	'
+fi
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>^H</string>
+	<key>lineCaptureRegister</key>
+	<string>1</string>
+	<key>name</key>
+	<string>Tidy HTML 5</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>4A840F89-23F1-4526-B479-88CA88518AAD</string>
+</dict>
+</plist>

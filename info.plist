@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>boyvivbhf+grkgzngr@fhogyrtenqvrag.pbz</string>
+	<key>contactName</key>
+	<string>Thomas Aylott</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>7A824003-79E9-4DB8-A9C8-E17BCAA34AB2</string>
+			<string>------------------------------------</string>
+			<string>4A840F89-23F1-4526-B479-88CA88518AAD</string>
+			<string>------------------------------------</string>
+			<string>E4634C6C-61FA-4848-8DB1-67CDE713A0BB</string>
+			<string>C92BBBB1-AB7A-4C88-B691-48FB65DAF542</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> subtleGradient - HTML5</string>
+	<key>ordering</key>
+	<array>
+		<string>8659E9F6-30F9-4B26-AD9F-2F849B513E61</string>
+		<string>4A840F89-23F1-4526-B479-88CA88518AAD</string>
+		<string>E4634C6C-61FA-4848-8DB1-67CDE713A0BB</string>
+		<string>C92BBBB1-AB7A-4C88-B691-48FB65DAF542</string>
+		<string>7A824003-79E9-4DB8-A9C8-E17BCAA34AB2</string>
+	</array>
+	<key>uuid</key>
+	<string>630DEED4-EA5C-4592-9C06-6F9823C50718</string>
+</dict>
+</plist>

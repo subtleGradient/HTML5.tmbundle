@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta http-equiv=Content-type content="text/html; charset=utf-8"&gt;
+	&lt;title&gt;${1:$TM_FILENAME}&lt;/title&gt;
+${2:	&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}screen.css" type="text/css" media=screen&gt;
+	&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}print.css" type="text/css" media=print&gt;
+	&lt;!--[if IE]&gt;&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}ie.css" type="text/css" media=screen&gt;&lt;![endif]--&gt;
+}&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=container&gt;
+
+$0
+
+&lt;/div&gt;
+${3:&lt;!--[if gte IE 6]&gt;&lt;!--&gt;${20:}&lt;!-- &lt;![endif]--&gt;
+}&lt;/body&gt;
+&lt;/html&gt;
+</string>
+	<key>name</key>
+	<string>HTML5 Template</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>html5</string>
+	<key>uuid</key>
+	<string>7A824003-79E9-4DB8-A9C8-E17BCAA34AB2</string>
+</dict>
+</plist>

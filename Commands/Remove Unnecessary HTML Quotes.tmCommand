@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+def remove_html_quotes(html)
+	html.
+	gsub(/\b="([-._:a-zA-Z0-9]+)"(?=\s|&gt;)/,'=\1').
+	gsub(/\b='([-._:a-zA-Z0-9]+)'(?=\s|&gt;)/,'=\1')
+end
+
+print remove_html_quotes(STDIN.read)
+
+__END__
+if __FILE__ == $0
+	require "test/unit"
+	class TestToggleHtmlQuotes &lt; Test::Unit::TestCase
+		
+		def test_remove_html_quotes
+			after = remove_html_quotes(&lt;&lt;-HTML)
+			&lt;div key=val&gt;
+			&lt;div key="val"&gt;
+			&lt;div key='val'&gt;
+			HTML
+			assert_equal(&lt;&lt;-HTML, after)
+			&lt;div key=val&gt;
+			&lt;div key=val&gt;
+			&lt;div key=val&gt;
+			HTML
+		end
+		
+		def test_remove_html_quotes_bugs0
+			before = &lt;&lt;-HTML
+			="val"
+			HTML
+			after = remove_html_quotes(before)
+			assert_equal before, after
+		end
+		
+	end
+end
+</string>
+	<key>fallbackInput</key>
+	<string>scope</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Remove Unnecessary HTML Quotes</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html meta.tag</string>
+	<key>uuid</key>
+	<string>E4634C6C-61FA-4848-8DB1-67CDE713A0BB</string>
+</dict>
+</plist>
