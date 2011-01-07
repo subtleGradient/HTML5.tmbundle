@@ -34,7 +34,7 @@ fi
 	<key>lineCaptureRegister</key>
 	<string>1</string>
 	<key>name</key>
-	<string>Tidy HTML 5</string>
+	<string>Tidy HTML5</string>
 	<key>output</key>
 	<string>replaceDocument</string>
 	<key>scope</key>

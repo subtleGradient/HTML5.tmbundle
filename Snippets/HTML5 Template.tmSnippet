@@ -8,18 +8,12 @@
 &lt;head&gt;
 	&lt;meta http-equiv=Content-type content="text/html; charset=utf-8"&gt;
 	&lt;title&gt;${1:$TM_FILENAME}&lt;/title&gt;
-${2:	&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}screen.css" type="text/css" media=screen&gt;
-	&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}print.css" type="text/css" media=print&gt;
-	&lt;!--[if IE]&gt;&lt;link rel=stylesheet href="${10:http://tripledoubleyou.subtlegradient.com/c/blueprint/}ie.css" type="text/css" media=screen&gt;&lt;![endif]--&gt;
-}&lt;/head&gt;
+&lt;/head&gt;
 &lt;body&gt;
-&lt;div id=container&gt;
 
 $0
 
-&lt;/div&gt;
-${3:&lt;!--[if gte IE 6]&gt;&lt;!--&gt;${20:}&lt;!-- &lt;![endif]--&gt;
-}&lt;/body&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </string>
 	<key>name</key>
