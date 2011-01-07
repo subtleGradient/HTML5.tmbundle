@@ -18,7 +18,7 @@ TextMate::Complete.new.complete!
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>text.html.5, text.html.5 meta.tag -string</string>
+	<string>text.html.5, text.html.5 meta.tag -string, text.html.5 meta.tag punctuation.definition.tag.end</string>
 	<key>uuid</key>
 	<string>DFBD23E4-7DBF-49EE-8EB4-5EEE4349DBD2</string>
 </dict>
