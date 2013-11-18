@@ -247,6 +247,21 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>\s*&lt;script\s+type=(["'])text/jsx.*?\1[^&gt;]*&gt;</string>
+			<key>end</key>
+			<string>&lt;/script&gt;</string>
+			<key>name</key>
+			<string>text.html.embedded.html</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>\s*&lt;script\s+type=(["'])text/html.*?\1[^&gt;]*&gt;</string>
 			<key>beginCaptures</key>
 			<dict/>
