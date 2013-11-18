@@ -10,6 +10,8 @@
 	<array>
 		<string>AA0F28ED-C25A-4C58-BE30-3ACE0572CE9C</string>
 	</array>
+	<key>description</key>
+	<string></string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -25,7 +27,7 @@
 		<dict/>
 	</dict>
 	<key>name</key>
-	<string> subtleGradient - HTML5</string>
+	<string>HTML5 — SubtleGradient</string>
 	<key>ordering</key>
 	<array>
 		<string>8659E9F6-30F9-4B26-AD9F-2F849B513E61</string>
