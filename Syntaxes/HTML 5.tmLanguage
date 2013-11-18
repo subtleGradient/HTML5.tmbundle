@@ -1424,7 +1424,7 @@
 		<key>tag-js-attribute</key>
 		<dict>
 			<key>begin</key>
-			<string>\b(on(?:click|dblclick|mouseup|mousedown|contextmenu|mousewheel|DOMMouseScroll|mouseover|mouseout|mousemove|selectstart|selectend|keydown|keypress|keyup|focus|blur|change|reset|select|submit|load|unload|beforeunload|resize|move|DOMContentLoaded|readystatechange|error|abort|scroll))\b\s*(=)</string>
+			<string>\b(on\w+)\b\s*(=)(?='|")</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
