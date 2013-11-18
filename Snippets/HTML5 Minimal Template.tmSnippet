@@ -4,25 +4,18 @@
 <dict>
 	<key>content</key>
 	<string>&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta charset=utf-8&gt;
-	&lt;title&gt;${1:`echo $TM_FILENAME|cut -d. -f1`}&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+&lt;meta charset=utf-8&gt;
+&lt;title&gt;${1:`echo $TM_FILENAME|cut -d. -f1`}&lt;/title&gt;
 
 $0
-
-&lt;/body&gt;
-&lt;/html&gt;
 </string>
 	<key>name</key>
-	<string>HTML5 Template</string>
+	<string>HTML5 Minimal Template</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>html5</string>
 	<key>uuid</key>
-	<string>7A824003-79E9-4DB8-A9C8-E17BCAA34AB2</string>
+	<string>BB6D45E5-4C95-4FCC-95A0-970D8B6BB1D0</string>
 </dict>
 </plist>
