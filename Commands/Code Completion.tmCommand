@@ -11,15 +11,25 @@ TextMate::Complete.new.complete!
 </string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>keyEquivalent</key>
 	<string>~</string>
 	<key>name</key>
 	<string>Code Completion</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>text.html.5, text.html.5 meta.tag -string, text.html.5 meta.tag punctuation.definition.tag.end</string>
 	<key>uuid</key>
 	<string>DFBD23E4-7DBF-49EE-8EB4-5EEE4349DBD2</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

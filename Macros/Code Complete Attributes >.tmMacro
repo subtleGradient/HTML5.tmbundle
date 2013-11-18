@@ -37,6 +37,8 @@ TextMate::Complete.new.complete!
 			<string>executeCommandWithOptions:</string>
 		</dict>
 	</array>
+	<key>isDisabled</key>
+	<true/>
 	<key>keyEquivalent</key>
 	<string> </string>
 	<key>name</key>
