@@ -247,16 +247,16 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\s*&lt;script\s+type=(["'])text/jsx.*?\1[^&gt;]*&gt;</string>
+			<string>(?i)\s*&lt;script\s+type=(["'])text/jsx.*?\1[^&gt;]*&gt;</string>
 			<key>end</key>
 			<string>&lt;/script&gt;</string>
 			<key>name</key>
-			<string>text.html.embedded.html</string>
+			<string>source.js.jsx.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$base</string>
+					<string>source.js.jsx</string>
 				</dict>
 			</array>
 		</dict>
@@ -1164,6 +1164,8 @@
 							<string>punctuation.separator.key-value.html</string>
 						</dict>
 					</dict>
+					<key>disabled</key>
+					<integer>1</integer>
 					<key>end</key>
 					<string>(?=\s|&gt;)</string>
 					<key>name</key>
@@ -1209,6 +1211,8 @@
 							<string>punctuation.separator.key-value.html</string>
 						</dict>
 					</dict>
+					<key>disabled</key>
+					<integer>1</integer>
 					<key>end</key>
 					<string>(?&lt;='|")</string>
 					<key>name</key>
